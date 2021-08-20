@@ -1,0 +1,61 @@
+:root {
+    --honey-yellow: #EAB543;
+    --pastel-yellow: #F8EFBA;
+    --peach-pink: #FD7272;
+    --magenta-pink: #FC427B;
+}
+
+/* General styling to apply to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Styling for Header Section */
+header {
+    color: var(--honey-yellow);
+    background-color: var(--magenta-pink);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--pastel-yellow);
+}
+
+header nav {
+    margin: 15px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+header nav ul li a:hover {
+    background-color: var(--honey-yellow);
+    color: var(--magenta-pink);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Styling for footer section */

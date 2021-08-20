@@ -2,72 +2,103 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Breania R Harvey, Future Full-Stack Developer</title>
-    <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
   </head>
 
   <body>
-    <!-- Header with navigational links -->
+    <!-- Header with Navigational links-->
     <header>
-      <h1>
-        Breania (You can call be Bre) Harvey
-      </h1>
+
       <nav>
         <ul>
           <li>
-            <a href="#About-Me">About Me</a>
+            <a href="#About-Me">Get to Know Me</a>
           </li>
+
           <li>
-            <a href="#My-Work">My Work</a>
+            <a href="#My-Work">What I've Been Working On</a>
           </li>
+
           <li>
-            <a href="#Contact-Me">Contact Me</a>
+            <a href="#Contact-Me">Get in Touch</a>
           </li>
         </ul>
       </nav>
     </header>
 
       <!-- Hero section -->
-      <section id="about-me" class="hero">
-        <!-- Prefessional Picture -->
+      <section class="hero">
+
         <div class="hero-picture">
-          <img src="Assets/Images/professionalpic.jpeg" alt="The Future Stack Developer Herself"/>
+          <!-- Hero picture -->
+          <img src="Assets/Images/professionalpic.jpeg" alt="The Future Stack Developer Herself" height="600" width="300"/>
         </div>
-        <div>
-          <h2 class="hero-content">About Me</h2>
-          <p>Hi! 👋 My name is Breania R Harvey, but you can call me Bre. I am an inspired and creative soon-to-be full-stack developer with a penchant for details. I am currently training with the Web Development Bootcamp at Washington University. I am extremely hardworking and dedicated individual who sees coding as a never-ending puzzle I can't put down. Please feel free to browse my work below and contact me if you have any questions. </p>
-          <h3 class="skills">Skills</h3>
-            <ul>
-              <li>
-                HTML
-              </li>
-              <li>
-                CSS
-              </li>
-            </ul>
+
+        <!-- Introduction -->
+        <div  class="hero-content">
+          <h1>Hello I'm Bre Harvey</h1>
+            <p>Future Full-Stack Developer</p>
+        </div>
+
+        <!-- About Me Section -->
+        <div id="About-Me" class="intro">
+          <h2>Get to Know Me</h2>
+          <h3>About Bre</h3>
+          <p> Hi! 👋 My name is Breania Harvey, though I prefer to be called Bre. Thank you for taking to time to view my work. I am a Saint Louis based soon-to-be full-stack developer attending coding bootcamp at Washington University. I am a detail-oriented and creative person who sees coding like a puzzle that I just can't seem to put down.</p>
         </div>
       </section>
+
+
       <!-- My Work section -->
-      <section id="my-work" class="work-section">
+      <section id="My-Work" class="work-section">
+        <h2>What I've Been Working On</h2>
+        <p>The following are side projects and class challenges to showcase my skills and creativity.</p>
         <img src="./Assets/Images/Placeholder.png" alt="placeholder image"/>
         <img src="./Assets/Images/Placeholder.png" alt="placeholder image"/>
-        
+        <img src="./Assets/Images/Placeholder.png" alt="placeholder image"/>
+        <img src="./Assets/Images/Placeholder.png" alt="placeholder image"/>
       </section>
+
       <!-- Contact Me section -->
-      <section id="contact-me" class="contact-section">
-        <h2>Contact Information</h2>
+      <section id="Contact-Me" class="contact-section">
+        
+        <!-- Contact Information -->
+        <div>
+          <h2>Get in Touch</h2>
+          <h3>Contact Me via</h3>
         <ul>
           <li>
             <a href="mailto:harvey.breania@gmail.com">Email</a>
           </li>
+          <p>Or</p>
           <li>
             <a href="https://github.com/HarvBCoding">Github Profile</a>
           </li>
         </ul>
+        </div>
+
+        <!-- Direct contact form -->
+        <div class="contact-form">
+          <h3>Or Send a Direct Message Here</h3>
+          <form>
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" placeholder="Name" />
+
+            <label for="contact-phone">Phone Number</label>
+            <input type="text" id="contact-phone" placeholder="Phone Number" />
+            
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </section>
+
       <!-- Footer -->
       <footer>
-
+        💖 Made from scratch by Breania (Bre) Harvey
       </footer>
   </body>
 </html>
