@@ -1,8 +1,12 @@
+/* colors used through out the project */
 :root {
-    --honey-yellow: #EAB543;
-    --pastel-yellow: #F8EFBA;
-    --peach-pink: #FD7272;
-    --magenta-pink: #FC427B;
+    --pastel-pink: #f58ed6;
+    --lavender: #c699f8;
+    --peach-pink: #f6dedb;
+    --sky-blue: #b2c5f4;
+    --darker-purple: #aa86d3;
+    --indigo-blue: #92a4f7;
+    --dark-grey: #5d5d5d;
 }
 
 /* General styling to apply to all elements */
@@ -18,8 +22,7 @@ body {
 
 /* Styling for Header Section */
 header {
-    color: var(--honey-yellow);
-    background-color: var(--magenta-pink);
+    background-color: var(--sky-blue);
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -30,7 +33,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: var(--pastel-yellow);
+    color: var(--darker-purple);
 }
 
 header nav {
@@ -48,14 +51,117 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 header nav ul li a:hover {
-    background-color: var(--honey-yellow);
-    color: var(--magenta-pink);
+    background-color: var(--pastel-pink);
+    color: var(--dark-grey);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.75);
     font-weight: bold;
     border-radius: 20px;
 }
 
-/* Styling for footer section */
+/* styling for hero content */
+.hero-content {
+    float: right;
+    text-align: center;   
+    margin: auto;
+    width: 60%;
+    padding-top: 50px;
+    color: var(--dark-grey);
+}
+
+.hero-picture {
+    background-color: var(--peach-pink);
+}
+
+.hero-content span {
+    font-size: 9.5vw;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+#subtitle {
+    font-size: 2.15vw;
+    padding-top: 35px;
+}
+
+/* styling for About Me section */
+.intro {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--indigo-blue);
+    text-align: center;
+}
+
+
+.primary-content {
+    flex: 2 60%;
+}
+
+.primary-title {
+    flex: 1 35.4%;
+    height: 500px;
+    width: 150px;
+    background-color: var(--sky-blue);
+    padding: 70px 20px 0px 20px;
+    color: var(--dark-grey);
+    font-size: 5vw;
+    margin: -3px 3px 0px 0px;
+    line-height: 1.2
+}
+
+.primary-content h3 {
+    padding: 115px 65px 15px 64px;
+    font-size: 3.5vw;
+    color: var(--dark-grey);
+    border-bottom: 3px solid var(--sky-blue);
+    margin: 0px 200px 0px 200px;
+}
+
+.primary-content p {
+    color: var(--dark-grey);
+    padding: 35px 40px 5px 40px;
+    line-height: 2.9;
+}
+
+/* styling for My Work section */
+.work-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.secondary-title {
+    flex: 2 35%;
+    font-size: 4.4vw;
+    padding: 165px 5px 0px 5px;
+    background-color: var(--pastel-pink);
+    color: var(--dark-grey);
+    line-height: 1.3;
+}
+
+.secondary-content {
+    flex: 1 65%;
+    padding: 90px 15px 40px 15px;
+    background-color: var(--peach-pink);
+}
+
+.secondary-content p {
+    font-size: 1.8vw;
+    line-height: 2.0;
+    color: var(--dark-grey);
+    padding-bottom: 30px;
+}
+
+.main-image {
+    float: left;
+}
+
+
+
+
+
+
+
