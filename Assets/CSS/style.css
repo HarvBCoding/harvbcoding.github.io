@@ -146,6 +146,10 @@ header nav ul li a:hover {
     flex: 1 65%;
     padding: 90px 15px 40px 15px;
     background-color: var(--peach-pink);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondary-content p {
@@ -156,12 +160,28 @@ header nav ul li a:hover {
 }
 
 .main-image {
-    float: left;
+    float: right;
 }
 
+/* styling for Contact Me section */
 
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.final-title{
+    font-size: 35px;
+    padding: 50px 95px 50px 20px;
+}
 
+.final-contact {
+    flex: 1;
+}
 
-
-
+.contact-form {
+    flex: 1;
+}
