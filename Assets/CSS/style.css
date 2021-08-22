@@ -1,6 +1,6 @@
 /* colors used through out the project */
 :root {
-    --pastel-pink: #f58ed6;
+    --pastel-pink: #f6c3b9;
     --lavender: #c699f8;
     --peach-pink: #f6dedb;
     --sky-blue: #b2c5f4;
@@ -173,15 +173,104 @@ header nav ul li a:hover {
     align-items: flex-start;
 }
 
-.final-title{
-    font-size: 35px;
-    padding: 50px 95px 50px 20px;
+.final-title {
+    line-height: 1.5;
+    width: 350px;
+    font-weight: lighter;
+    background-color: var(--lavender);
+    font-size: 45px;
+    padding: 115px 100px 0px 60px;
+    height: 600px;
+    text-align: center;
+    color: var(--dark-grey);
 }
 
 .final-contact {
     flex: 1;
+    padding: 90px 50px 0px 75px;
+    font-size: 25px;
+    line-height: 2.1;
+    background-color: var(--darker-purple);
+    text-align: center;
+    height: 600px;
 }
 
+.final-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.final-contact li {
+    padding-left: 1rem;
+    text-indent: -0.75rem;
+}
+
+.final-contact li::before {
+    content: "💻";
+}
+.contact-subtitle {
+    color: var(--dark-grey);
+    font-size: 35px;
+    border-bottom: 2px solid var(--sky-blue);
+    text-align: center;
+    margin: 0px 50px 25px 50px;
+ }
 .contact-form {
     flex: 1;
+    text-align: left;
+    padding: 60px 50px 0px 75px;
+    line-height: 1.25;
+    font-size: 18px;
+    background-color: var(--darker-purple);
+    color: var(--dark-grey);
+    height: 600px;
+}
+.final-contact p {
+    text-align: center;
+    color: var(--dark-grey);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid (var--dark-grey);
+    display: block;
+    padding: 7px 8px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.contact-form p {
+    font-size: 22px;
+    border-bottom: 2px solid var(--sky-blue);
+    margin: 0px 30px 25px 30px;
+    padding: 18px 0px 4px 0px;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.contact-form label {
+    border-bottom: 1.5px solid var(--sky-blue);
+}
+
+.contact-form button {
+    padding: 9px 20px;
+    background-color: var(--sky-blue);
+    border-radius: 10px;
+    font-size: 15px;
+    color: var(--dark-grey);
+    margin: 10px 0px 0px 60px;
+}
+
+/* styling for footer section */
+footer {
+    font-size: 20px;
+    padding: 20px 0px 20px 10px;
+    background: var(--peach-pink);
+    color: var(--darker-purple);
 }
