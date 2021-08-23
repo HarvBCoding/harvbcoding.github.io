@@ -173,6 +173,20 @@ header nav ul li a:hover {
 .main-image {
     float: right;
 }
+.main-image img {
+    width: 80%
+}
+
+.secondary-content figure figcaption {
+    position: relative;
+    left: 0;
+    bottom: 43px;
+    width: 100%;
+    padding: 10px 9px;
+    height: 40px;
+    background-color: rgba(0 ,0, 0, 0.6);
+}
+
 
 /* styling for Contact Me section */
 
@@ -286,14 +300,239 @@ footer {
 
 /* media queries for phones in portrait mode */
 @media screen and (max-width: 575px) {
+    #subtitle {
+        margin: 0px 115px;
+    }
+    .hero-content span{
+        font-size: 11.5vw;
+    }
+    .primary-title {
+        padding: 45px 20px 25px 20px;
+        height: 20%;
+    }
+
+    .primary-content {
+        height: 85%;
+    }
+    .primary-content h3 {
+        padding: 20px 35px 10px 35px;
+        margin: 0px 200px 40px 200px;
+    }
+    .secondary-content {
+        width: 100%;
+        padding: 40px 15px;
+    }
+    .main-image img {
+        width: 100%;
+    }
+    .work-section {
+        flex-direction: column-reverse;
+    }
+    .secondary-title {
+        padding: 50px 5px;
+    }
+    .other-images img  {
+        width: 181.6px;
+    }
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .final-title {
+        width: 100%;
+        padding: 30px 0px;
+        border-bottom: 2px solid var(--sky-blue);
+    }
+    .final-contact {
+        padding: 20px 30px 20px 20px;
+        width: 100%;
+        border-bottom: 2px solid var(--sky-blue);
+    }
+    .final-contact p{
+        margin: 15px 120px;
+    }
+
+    .final-contact li {
+        padding-left: 8rem;
+        padding-bottom: 40px;
+    }
+    .contact-subtitle {
+        text-align: center;
+        margin: 40px 120px;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 55px 40px 30px 95px;
+    }
+    .contact-form p {
+        text-align: center;
+    }
 
 }
 /* media queries for small tablets and phones in landscape */
 @media screen and (max-width: 768px) {
+    #subtitle {
+        margin: 0px 50px;
+    }
+    .hero-content span{
+        font-size: 11.5vw;
+    }
+    .primary-title {
+        padding: 45px 20px 25px 20px;
+        height: 20%;
+    }
+
+    .primary-content {
+        height: 85%;
+    }
+    .primary-content h3 {
+        padding: 20px 35px 10px 35px;
+        margin: 0px 200px 40px 200px;
+    }
+    .secondary-content {
+        width: 100%;
+        padding: 40px 15px;
+    }
+    .main-image img {
+        width: 100%;
+    }
+    .work-section {
+        flex-direction: column-reverse;
+    }
+    .secondary-title {
+        padding: 50px 5px;
+    }
+    .other-images img  {
+        width: 245.6px;
+    }
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .final-title {
+        width: 100%;
+        padding: 30px 0px;
+        border-bottom: 2px solid var(--sky-blue);
+    }
+    .final-contact {
+        padding: 20px 30px 20px 20px;
+        width: 100%;
+        border-bottom: 2px solid var(--sky-blue);
+    }
+    .final-contact p{
+        margin: 15px 120px;
+    }
+
+    .final-contact li {
+        padding-left: 8rem;
+        padding-bottom: 40px;
+    }
+    .contact-subtitle {
+        text-align: center;
+        margin: 40px 120px;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 55px 50px;
+    }
+    .contact-form p {
+        text-align: center;
+        margin: 30px 125px;
+    }
+    .contact-form button {
+        width: 50%;
+        margin: 0px 150px;
+    }
+    .contact-form label {
+        margin: 0px 90px;
+    }
+    .contact-form input, .contact-form textarea {
+        margin: 15px auto;
+        width: 75%;
+    }
 
 }
 
 /* media queries for smaller laptops and larger tablets */
 @media screen and (max-width: 980px) {
+    #subtitle {
+        margin: 0px 50px;
+    }
+    .hero-content span{
+        font-size: 11.5vw;
+    }
+    .primary-title {
+        padding: 100px 20px 25px 20px;
+        height: 100%;
+        line-height: 1.5;
+    }
 
+    .primary-content {
+        height: 85%;
+    }
+    .primary-content h3 {
+        padding: 20px 35px 10px 35px;
+        margin: 0px 200px 40px 200px;
+    }
+    .secondary-content {
+        width: 100%;
+        padding: 40px 15px;
+    }
+    .main-image img {
+        width: 100%;
+    }
+    .work-section {
+        flex-direction: column-reverse;
+    }
+    .secondary-title {
+        padding: 50px 5px;
+    }
+    .other-images img  {
+        width: 300px;
+    }
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .final-title {
+        width: 100%;
+        padding: 30px 0px;
+        border-bottom: 2px solid var(--sky-blue);
+    }
+    .final-contact {
+        padding: 20px 30px 20px 20px;
+        width: 100%;
+        border-bottom: 2px solid var(--sky-blue);
+    }
+    .final-contact p{
+        margin: 15px 250px;
+    }
+
+    .final-contact li {
+        padding-left: 16rem;
+        padding-bottom: 40px;
+    }
+    .contact-subtitle {
+        text-align: center;
+        margin: 40px 260px;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 55px 50px;
+    }
+    .contact-form p {
+        text-align: center;
+        margin: 30px 125px;
+    }
+    .contact-form button {
+        width: 60%;
+        margin: 0px 150px;
+    }
+    .contact-form label {
+        margin: 0px 125px;
+    }
+    .contact-form input, .contact-form textarea {
+        margin: 15px auto;
+        width: 73%;
+    }
 }
