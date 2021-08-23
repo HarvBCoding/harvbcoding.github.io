@@ -26,9 +26,6 @@ header {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 99;
 }
 
 header a {
@@ -62,18 +59,23 @@ header nav ul li a:hover {
 }
 
 /* styling for hero content */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+}
 .hero-content {
-    float: right;
     text-align: center;   
-    margin: auto;
-    width: 60%;
-    padding-top: 50px;
+    flex: 1 60%;
+    padding: 70px;
     color: var(--dark-grey);
+    background-color: var(--peach-pink)
 }
 
 .hero-picture {
     background-color: var(--peach-pink);
+    flex: 2 30.6%;
 }
+
 
 .hero-content span {
     font-size: 9.5vw;
@@ -83,46 +85,55 @@ header nav ul li a:hover {
 
 #subtitle {
     font-size: 2.15vw;
-    padding-top: 35px;
+    padding: 35px 0px 10px 0px;
+    border-bottom: 2px solid var(--pastel-pink);
+    margin: 0px 155px;
 }
 
 /* styling for About Me section */
 .intro {
     width: 100%;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--indigo-blue);
     text-align: center;
+    flex: 2 40%;
+    margin-top: -2px;
 }
 
 
 .primary-content {
     flex: 2 60%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .primary-title {
     flex: 1 35.4%;
-    height: 500px;
-    width: 150px;
     background-color: var(--sky-blue);
-    padding: 70px 20px 0px 20px;
+    padding: 75px 20px 25px 20px;
     color: var(--dark-grey);
     font-size: 5vw;
-    margin: -3px 3px 0px 0px;
-    line-height: 1.2
+    line-height: 1.2;
+    height: 100%
 }
 
 .primary-content h3 {
-    padding: 115px 65px 15px 64px;
+    padding: 20px 65px 10px 64px;
     font-size: 3.5vw;
     color: var(--dark-grey);
     border-bottom: 3px solid var(--sky-blue);
-    margin: 0px 200px 0px 200px;
+    margin: 0px 200px 50px 200px;
 }
 
 .primary-content p {
     color: var(--dark-grey);
-    padding: 35px 40px 5px 40px;
+    padding: 10px 40px 20px 40px;
     line-height: 2.9;
 }
 
@@ -170,28 +181,27 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    background-color: var(--lavender);
 }
 
 .final-title {
     line-height: 1.5;
-    width: 350px;
+    flex: 1 5.6%;
     font-weight: lighter;
     background-color: var(--lavender);
-    font-size: 45px;
-    padding: 115px 100px 0px 60px;
-    height: 600px;
     text-align: center;
     color: var(--dark-grey);
+    font-size: 4vw;
+    padding: 0px 30px;
 }
 
 .final-contact {
     flex: 1;
-    padding: 90px 50px 0px 75px;
+    padding: 50px 30px 0px 45px;
     font-size: 25px;
     line-height: 2.1;
     background-color: var(--darker-purple);
-    text-align: center;
     height: 600px;
 }
 
@@ -213,13 +223,13 @@ header nav ul li a:hover {
     color: var(--dark-grey);
     font-size: 35px;
     border-bottom: 2px solid var(--sky-blue);
-    text-align: center;
-    margin: 0px 50px 25px 50px;
+    text-align: left;
+    margin: 0px 195px 25px 10px;
  }
 .contact-form {
     flex: 1;
     text-align: left;
-    padding: 60px 50px 0px 75px;
+    padding: 55px 50px 0px 50px;
     line-height: 1.25;
     font-size: 18px;
     background-color: var(--darker-purple);
@@ -227,7 +237,7 @@ header nav ul li a:hover {
     height: 600px;
 }
 .final-contact p {
-    text-align: center;
+    /* text-align: center; */
     color: var(--dark-grey);
     font-size: 25px;
     font-weight: bold;
@@ -245,11 +255,10 @@ header nav ul li a:hover {
 }
 
 .contact-form p {
-    font-size: 22px;
+    font-size: 24px;
     border-bottom: 2px solid var(--sky-blue);
-    margin: 0px 30px 25px 30px;
-    padding: 18px 0px 4px 0px;
-    text-align: center;
+    margin: 0px 45px 25px 5px;
+    padding: 10px 0px;
     line-height: 1;
     font-weight: bold;
 }
@@ -259,12 +268,12 @@ header nav ul li a:hover {
 }
 
 .contact-form button {
-    padding: 9px 20px;
+    padding: 10px 25px;
     background-color: var(--sky-blue);
     border-radius: 10px;
     font-size: 15px;
     color: var(--dark-grey);
-    margin: 10px 0px 0px 60px;
+    margin: 10px 0px 0px 90px;
 }
 
 /* styling for footer section */
@@ -273,4 +282,18 @@ footer {
     padding: 20px 0px 20px 10px;
     background: var(--peach-pink);
     color: var(--darker-purple);
+}
+
+/* media queries for phones in portrait mode */
+@media screen and (max-width: 575px) {
+
+}
+/* media queries for small tablets and phones in landscape */
+@media screen and (max-width: 768px) {
+
+}
+
+/* media queries for smaller laptops and larger tablets */
+@media screen and (max-width: 980px) {
+
 }
