@@ -178,6 +178,20 @@ header nav ul li a:hover {
     width: 300px;
     height: 300px;
 }
+.main-image img {
+    width: 80%
+}
+
+.secondary-content figure figcaption {
+    position: relative;
+    left: 0;
+    bottom: 43px;
+    width: 100%;
+    padding: 10px 9px;
+    height: 40px;
+    background-color: rgba(0 ,0, 0, 0.6);
+}
+
 
 
 /* styling for Contact Me section */
@@ -293,7 +307,7 @@ footer {
 /* media queries for phones in portrait mode */
 @media screen and (max-width: 575px) {
     #subtitle {
-        margin: 0px 2px;
+        margin: 0px 115px;
     }
     .hero-content span{
         font-size: 11.5vw;
@@ -323,11 +337,8 @@ footer {
     .secondary-title {
         padding: 50px 5px;
     }
-    .other-images {
-        width: 100%;
-    }
     .other-images img  {
-        width: 60%;
+        width: 181.6px;
     }
     .contact-section {
         flex-direction: column;
@@ -363,14 +374,9 @@ footer {
         text-align: center;
     }
 
-    .contact-form button {
-        margin: 10px auto;
-        width: 75%;
-    }
-
 }
 /* media queries for small tablets and phones in landscape */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #subtitle {
         margin: 0px 50px;
     }
@@ -451,10 +457,10 @@ footer {
         width: 75%;
     }
 
-} */
+}
 
 /* media queries for smaller laptops and larger tablets */
-/* @media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
     #subtitle {
         margin: 0px 50px;
     }
@@ -535,4 +541,4 @@ footer {
         margin: 15px auto;
         width: 73%;
     }
-} */
+}
